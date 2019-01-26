@@ -8,6 +8,8 @@ public class LevelChunk: MonoBehaviour {
 
     public Mesh m_mesh = null;
 
+    public float Timestamp { get; set; } = 0f;
+
     public Vector2Int m_edgeCount;
     public float m_size = 10.0f;
     public float m_heightScalar = 5.0f;
@@ -96,5 +98,17 @@ public class LevelChunk: MonoBehaviour {
         m_mesh.UploadMeshData(true);
     }
     
-
+    public void GenerateContent(LevelContentAsset levelContent) {
+        int contentNum = Mathf.RoundToInt(m_size * m_size * Random.Range(0.005f, 0.01f));
+        for (int i = 0; i < contentNum; i++) {
+            var localPos = new Vector2(
+                Random.value * m_size,
+                Random.value * m_size);
+            var y = GenerateHeight(localPos);
+            var levelObject = levelContent.InstantiateObject(
+                transform, 
+                transform.position + new Vector3(localPos.x, y, localPos.y), 
+                Quaternion.Euler(0, Random.Range(0f, 360f), 0));
+        }
+    }
 }
