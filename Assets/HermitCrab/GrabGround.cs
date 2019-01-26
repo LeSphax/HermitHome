@@ -1,7 +1,11 @@
 ﻿using UnityEngine;
+using FMOD.Studio;
+using FMODUnity;
 
 public class GrabGround : MonoBehaviour
 {
+    public EventInstance m_grabSound;
+
     [HideInInspector]
     public KeyCode downCode;
     public HingeJoint tempHinge = null;
@@ -13,6 +17,8 @@ public class GrabGround : MonoBehaviour
             Debug.Log("Trigger on Ground ");
             if (Input.GetKey(downCode) && tempHinge == null)
             {
+                m_grabSound.start();
+
                 tempHinge = gameObject.AddComponent<HingeJoint>();
                 tempHinge.anchor = transform.InverseTransformPoint(collision.GetContact(0).point);
                 tempHinge.connectedAnchor = collision.GetContact(0).point;
@@ -37,6 +43,8 @@ public class GrabGround : MonoBehaviour
         {
             Destroy(tempHinge);
             tempHinge = null;
+
+            
         }
     }
 }

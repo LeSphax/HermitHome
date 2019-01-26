@@ -67,6 +67,7 @@ public class LevelGenerationManager: MonoBehaviour {
     
     void OnTargetChunkChanged() {
         Vector2Int chunk = Vector2Int.zero;
+        ChunkLoadQueue.Enqueue(chunk);
         for (chunk.x = TargetChunk.x - m_chunkDistance; chunk.x <= TargetChunk.x + m_chunkDistance; chunk.x++)
             for (chunk.y = TargetChunk.y - m_chunkDistance; chunk.y <= TargetChunk.y + m_chunkDistance; chunk.y++)
                 ChunkLoadQueue.Enqueue(chunk);
