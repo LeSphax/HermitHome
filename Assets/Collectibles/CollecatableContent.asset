@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 06d85e34bdc9ad94ba2e7dc23f80a765, type: 3}
-  m_Name: PickupContent
+  m_Name: CollecatableContent
   m_EditorClassIdentifier: 
   m_prefabs:
-  - weight: 1
+  - weight: 0
     content: {fileID: 2517243042859895155, guid: 4da5645113a341240a8f33af0cf48ac9,
       type: 3}
   - weight: 1
@@ -22,7 +22,7 @@ MonoBehaviour:
   - weight: 1
     content: {fileID: 2769316155484622774, guid: eb5745d7f69507347986f71feec24612,
       type: 3}
-  - weight: 1
+  - weight: 0
     content: {fileID: 4000901878986000011, guid: 7b6086ff6229ca24ea2912724acd4263,
       type: 3}
   - weight: 1
@@ -31,13 +31,15 @@ MonoBehaviour:
   - weight: 1
     content: {fileID: 4000901878986000011, guid: f8a01310dae90f045a5c06b618d4b878,
       type: 3}
-  - weight: 1
+  - weight: 0
     content: {fileID: 4000901878986000011, guid: 320292441751e3346b469f68302a30f3,
       type: 3}
-  - weight: 1
+  - weight: 0
     content: {fileID: 7649996041497483468, guid: 50ff3bfc97a99484a931561698847414,
       type: 3}
   - weight: 1
     content: {fileID: 7649996041497483468, guid: 686ffe47af587fc489c8224c7d5ce7b6,
       type: 3}
   m_content: []
+  m_uprightStrength: 1
+  m_normalLip: -1

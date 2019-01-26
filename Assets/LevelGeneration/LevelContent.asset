@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_prefabs: []
   m_content:
-  - weight: 200
+  - weight: 50
     content: {fileID: 11400000, guid: a85da39b96f44b9479fa1e9a7f059a77, type: 2}
   - weight: 1
     content: {fileID: 11400000, guid: 502dab4385d12ef459b3fc8f04d8da9f, type: 2}
+  m_uprightStrength: 0
+  m_normalLip: 0

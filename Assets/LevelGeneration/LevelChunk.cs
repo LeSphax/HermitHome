@@ -47,7 +47,7 @@ public class LevelChunk: MonoBehaviour {
             frequency *= m_scalarLacunarity;
             amplitude *= m_scalarPersistance;
 
-            scalar += Simplex.Noise.Generate(x * frequency, y * frequency);
+            scalar += Simplex.Noise.Generate(x * frequency, y * frequency) * amplitude;
         }
         
 
@@ -102,16 +102,28 @@ public class LevelChunk: MonoBehaviour {
     }
     
     public void GenerateContent(LevelContentAsset levelContent) {
-        int contentNum = Mathf.RoundToInt(m_size * m_size * Random.Range(0.005f, 0.01f));
+        int contentNum = Mathf.RoundToInt(m_size * m_size * Random.Range(0.0025f, 0.005f));
         for (int i = 0; i < contentNum; i++) {
             var localPos = new Vector2(
                 Random.value * m_size,
                 Random.value * m_size);
+
+            const float deltaDist = 1f;
             var y = GenerateHeight(localPos);
-            var levelObject = levelContent.InstantiateObject(
-                transform, 
+            var delta = new Vector2(
+                y - GenerateHeight(localPos + Vector2.right * deltaDist),
+                y - GenerateHeight(localPos + Vector2.up * deltaDist));
+
+            var normal = new Vector3(
+                Mathf.Tan(delta.x),
+                deltaDist,
+                Mathf.Tan(delta.y)).normalized;
+
+            levelContent.SpawnObject(
+                transform,
                 transform.position + new Vector3(localPos.x, y, localPos.y), 
-                Quaternion.Euler(0, Random.Range(0f, 360f), 0));
+                normal);
+                
         }
     }
 }

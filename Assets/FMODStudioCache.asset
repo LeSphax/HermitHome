@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114682741373992810}
-  - {fileID: 114285098479780052}
+  - {fileID: 114628591651198108}
   EditorEvents:
   - {fileID: 114567338336975492}
   - {fileID: 114690634454671842}
-  MasterBankRef: {fileID: 114285098479780052}
+  MasterBankRef: {fileID: 114628591651198108}
   StringsBankRef: {fileID: 114682741373992810}
-  stringsBankWriteTime: 636841261529309117
+  stringsBankWriteTime: 636841377050504534
   cacheVersion: 2
 --- !u!114 &114285098479780052
 MonoBehaviour:
@@ -56,15 +56,34 @@ MonoBehaviour:
   Path: event:/Music/Music
   guid: 15c9e58379cc824488be937b7a157b87
   Banks:
-  - {fileID: 114285098479780052}
+  - {fileID: 114628591651198108}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114994916493827896}
+  - {fileID: 114821467729207028}
   MinDistance: 0
   MaxDistance: 0
   Length: 32296
+--- !u!114 &114628591651198108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: D:\Projects\HermitHome\Assets\Banks\Desktop\Master Bank.bank
+  lastModified: 636841377050374631
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 848352
+  Exists: 1
 --- !u!114 &114682741373992810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\Banks\Desktop\Master Bank.strings.bank
-  lastModified: 636841261529309117
+  lastModified: 636841377050504534
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -99,7 +118,7 @@ MonoBehaviour:
   Path: snapshot:/Death
   guid: 92460afafa1e35478c41c3c10ac8c89f
   Banks:
-  - {fileID: 114285098479780052}
+  - {fileID: 114628591651198108}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -107,6 +126,22 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &114821467729207028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Game
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114994916493827896
 MonoBehaviour:
   m_ObjectHideFlags: 0

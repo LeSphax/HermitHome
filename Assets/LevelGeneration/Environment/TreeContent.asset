@@ -29,3 +29,5 @@ MonoBehaviour:
     content: {fileID: 4813747814384607092, guid: 5227b6b84068ac643a6ccd49936c2c5b,
       type: 3}
   m_content: []
+  m_uprightStrength: 5
+  m_normalLip: 0.1

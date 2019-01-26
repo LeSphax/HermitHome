@@ -94,7 +94,7 @@ MonoBehaviour:
   m_mesh: {fileID: 0}
   m_edgeCount: {x: 32, y: 32}
   m_size: 100
-  m_heightScalar: 1
+  m_heightScalar: 0.35
   m_chunkOffset: {x: 10000, y: 10000}
   m_octaves: 6
   m_frequency: 0.05
@@ -102,8 +102,8 @@ MonoBehaviour:
   m_persistance: 1.85
   m_scalarOctaves: 2
   m_scalarFrequency: 0.005
-  m_scalarLacunarity: 0.4
-  m_scalarPersistance: 1.5
+  m_scalarLacunarity: 0.25
+  m_scalarPersistance: 0.85
 --- !u!64 &788738718567196441
 MeshCollider:
   m_ObjectHideFlags: 0
