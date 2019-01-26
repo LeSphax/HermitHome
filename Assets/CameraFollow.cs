@@ -18,5 +18,6 @@ public class CameraFollow : MonoBehaviour
         Vector3 targetPoint = personalTransform.TransformPoint(15, 15, 15);
         targetPoint.y = 15;
         transform.position = Vector3.Lerp(transform.position, personalTransform.TransformPoint(20, 20, 0), 0.01f);
+        transform.LookAt(target.transform);
     }
 }
