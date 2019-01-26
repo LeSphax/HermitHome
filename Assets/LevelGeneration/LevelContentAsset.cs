@@ -42,14 +42,14 @@ public class LevelContentAsset: ScriptableObject {
         if (m_prefabs != null) {
             foreach (var weightedPrefab in m_prefabs) {
                 selector -= weightedPrefab.weight;
-                if (selector <= 0)
+                if (selector < 0)
                     return Instantiate(weightedPrefab.content, worldPosition, worldRotation, parent);
             }
         }
         if (m_content != null) {
             foreach (var weightedContent in m_content) {
                 selector -= weightedContent.weight;
-                if (selector <= 0)
+                if (selector < 0)
                     return weightedContent.content.InstantiateObject(parent, worldPosition, worldRotation);
             }
         }

@@ -58,7 +58,6 @@ public class LevelChunk: MonoBehaviour {
     [ContextMenu("Generate Mesh!")]
     public void GenerateMesh() {
         m_mesh = new Mesh();
-        GetComponent<MeshFilter>().mesh = m_mesh;
         
         var step = new Vector2(m_size / (m_edgeCount.x - 1), m_size / (m_edgeCount.y - 1));
         
@@ -96,6 +95,10 @@ public class LevelChunk: MonoBehaviour {
         m_mesh.RecalculateNormals();
         m_mesh.RecalculateTangents();
         m_mesh.UploadMeshData(true);
+
+        GetComponent<MeshFilter>().mesh = m_mesh;
+        if (GetComponent<MeshCollider>() != null)
+            GetComponent<MeshCollider>().sharedMesh = m_mesh;
     }
     
     public void GenerateContent(LevelContentAsset levelContent) {

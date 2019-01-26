@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d85e34bdc9ad94ba2e7dc23f80a765, type: 3}
+  m_Name: BushContent
+  m_EditorClassIdentifier: 
+  m_prefabs:
+  - weight: 1
+    content: {fileID: 5530056609104901020, guid: 1dcb4ec0953e07242a10051e48e0379b,
+      type: 3}
+  m_content: []
