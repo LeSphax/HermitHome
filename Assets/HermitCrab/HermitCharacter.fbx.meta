@@ -34,6 +34,7 @@ ModelImporter:
     100056: R_Outer_Bone_03
     100058: R_Outer_Bone_Foot
     100060: Root
+    100062: Hermit_Mesh
     400000: Body
     400002: Hermit
     400004: Hermit_Hook
@@ -65,10 +66,19 @@ ModelImporter:
     400056: R_Outer_Bone_03
     400058: R_Outer_Bone_Foot
     400060: Root
+    400062: Hermit_Mesh
     2100000: lambert1
+    2100002: lambert_Hook_DarkColor
+    2100004: lambert_HookLight_Color
+    2100006: lambert_HermitSkin
+    2100008: lambert_Eyewhite
+    2100010: Eye_socket
+    2100012: Lambert_Shell
     4300000: Hermit
+    4300002: Hermit_Mesh
     9500000: //RootNode
     13700000: Hermit
+    13700002: Hermit_Mesh
   externalObjects: {}
   materials:
     importMaterials: 1
