@@ -31,7 +31,7 @@ public class Collector: MonoBehaviour {
 
         if (!Physics.Raycast(ray2, out hitinfo, Mathf.Infinity, 1 << 9))
         {
-            Debug.LogError("Don't knwo where to put the collectible");
+            Debug.LogError("Don't know where to put the collectible");
             return;
         }
 
@@ -46,6 +46,6 @@ public class Collector: MonoBehaviour {
         colTransf.rotation = Quaternion.FromToRotation(Vector3.up, hitinfo.normal) *
             Quaternion.Euler(0f, Random.Range(0f, 360f), 0f);
 
-        TopScreenText.SetText(collectible.m_infoText);
+        TopScreenText.SetText(collectible.m_name + ": " + collectible.m_infoText);
     }
 }
