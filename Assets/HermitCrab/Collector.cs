@@ -16,20 +16,19 @@ public class Collector: MonoBehaviour {
     }
     void Collect(CollectibleInfo collectible) {
         var placementCollider = m_placementTarget.GetComponentInChildren<Collider>();
-        Vector3 dir = Vector3.zero;
+        Vector3 dir = Random.onUnitSphere;
 
-        while (dir.y < 0.5)
+        while (dir.y > 0.0)
         {
-            dir = Random.onUnitSphere;
+            dir.y = -dir.y;
         }
         
-
-        Vector3 direction = placementCollider.transform.position - placementCollider.transform.position + dir * 10f;
-        var ray2 = new Ray(placementCollider.transform.position + dir * 10f, -direction);
+        
+        var ray = new Ray(placementCollider.transform.position + -dir * 10f, dir);
 
         RaycastHit hitinfo;
 
-        if (!Physics.Raycast(ray2, out hitinfo, Mathf.Infinity, 1 << 9))
+        if (!Physics.Raycast(ray, out hitinfo, 10.0f, 1 << 9))
         {
             Debug.LogError("Don't know where to put the collectible");
             return;
