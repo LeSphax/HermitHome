@@ -14,10 +14,10 @@ public class CameraFollow : MonoBehaviour
     private void FixedUpdate()
     {
         personalTransform = target.transform;
-        personalTransform.rotation = Quaternion.Euler(0, target.transform.rotation.eulerAngles.y, 0);
-        Vector3 targetPoint = personalTransform.TransformPoint(15, 15, 15);
+        //personalTransform.rotation = Quaternion.Euler(0, target.transform.rotation.eulerAngles.y, 0);
+        Vector3 targetPoint = personalTransform.TransformPoint(15, 15, 15) / target.transform.localScale.x;
         targetPoint.y = 15;
-        transform.position = Vector3.Lerp(transform.position, personalTransform.TransformPoint(20, 20, 0), 0.01f);
+        transform.position = Vector3.Lerp(transform.position, targetPoint, 0.01f);
         transform.LookAt(target.transform);
     }
 }

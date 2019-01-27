@@ -9,6 +9,8 @@ public class GrabGround : MonoBehaviour
     [HideInInspector]
     public KeyCode downCode;
     public HingeJoint tempHinge = null;
+    public float force;
+    public float forceVelocityRatio;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -26,12 +28,12 @@ public class GrabGround : MonoBehaviour
                 tempHinge.useMotor = true;
                 tempHinge.useLimits = true;
                 JointLimits l = new JointLimits();
-                l.min = -70;
-                l.max = 70;
+                l.min = -60;
+                l.max = 60;
                 tempHinge.limits = l;
                 JointMotor m = new JointMotor();
-                m.targetVelocity = 300;
-                m.force = 1000;
+                m.targetVelocity = forceVelocityRatio * force;
+                m.force = force;
                 tempHinge.motor = m;
             }
         }

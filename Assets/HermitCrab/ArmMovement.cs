@@ -22,12 +22,16 @@ public class ArmMovement : MonoBehaviour
         HingeJoint armJoint = gameObject.AddComponent<HingeJoint>();
         armJoint.connectedBody = arm;
         armJoint.anchor = transform.InverseTransformPoint(arm.transform.position);
-        armJoint.axis = Vector3.forward;
+        float angle = fullArm.transform.eulerAngles.y;
+        angle = angle > 180 ? angle - 360 : angle;
+        float proportion = angle / 90;
+
+        armJoint.axis = Vector3.forward * (1- Mathf.Abs(proportion)) + Vector3.right * proportion;
         armJoint.useLimits = true;
         JointLimits l = new JointLimits();
         l.min = -90;
         l.max = 0;
-
+        armJoint.limits = l;
     }
 
     void Update()
@@ -35,7 +39,6 @@ public class ArmMovement : MonoBehaviour
         if (Input.GetKey(upCode))
         {
             arm.AddRelativeTorque(Vector3.back * speed, ForceMode.VelocityChange);
-
         }
         else if (Input.GetKey(downCode))
         {
