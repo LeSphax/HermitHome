@@ -81,6 +81,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9380296809308078, guid: 1f3ec1b39de76e849b8974725615007b, type: 3}
+      propertyPath: m_name
+      value: Sink
+      objectReference: {fileID: 0}
+    - target: {fileID: 9380296809308078, guid: 1f3ec1b39de76e849b8974725615007b, type: 3}
+      propertyPath: m_infoText
+      value: Fill it up and let your rubber-duck swim!
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f3ec1b39de76e849b8974725615007b, type: 3}
 --- !u!4 &4287679427579584593 stripped
