@@ -131,12 +131,22 @@ public class LevelChunk: MonoBehaviour {
         if (playerPrefab == null)
             return null;
         var localPos = Vector2.one * m_size / 2;
-        var height = GenerateHeight(localPos) + 2.0f;
+        var y = GenerateHeight(localPos);
+        const float deltaDist = 1f;
+        var delta = new Vector2(
+            y - GenerateHeight(localPos + Vector2.right * deltaDist),
+            y - GenerateHeight(localPos + Vector2.up * deltaDist));
 
+        var normal = new Vector3(
+            Mathf.Tan(delta.x),
+            deltaDist,
+            Mathf.Tan(delta.y)).normalized;
+
+        var height = y + 2.0f;
         var player = Instantiate(
             playerPrefab, 
             transform.position + new Vector3(localPos.x, height, localPos.y), 
-            Quaternion.Euler(0, Random.Range(0f, 360f), 0));
+            Quaternion.FromToRotation(Vector3.up, normal) * Quaternion.Euler(0, Random.Range(0f, 360f), 0));
 
         return player;
     }

@@ -1,0 +1,167 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!64 &1226730437232143722
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8614196449720476313}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: fa0bb27952cec354ebe6d8daff99b4f5, type: 3}
+--- !u!1001 &7909911691895536630
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4789803432103915689, guid: 1f3ec1b39de76e849b8974725615007b,
+        type: 3}
+      propertyPath: m_Name
+      value: ChickenCoop
+      objectReference: {fileID: 0}
+    - target: {fileID: 5550461226421094113, guid: 1f3ec1b39de76e849b8974725615007b,
+        type: 3}
+      propertyPath: m_Mass
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 3775854285920767479, guid: 1f3ec1b39de76e849b8974725615007b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3775854285920767479, guid: 1f3ec1b39de76e849b8974725615007b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3775854285920767479, guid: 1f3ec1b39de76e849b8974725615007b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3775854285920767479, guid: 1f3ec1b39de76e849b8974725615007b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3775854285920767479, guid: 1f3ec1b39de76e849b8974725615007b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3775854285920767479, guid: 1f3ec1b39de76e849b8974725615007b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3775854285920767479, guid: 1f3ec1b39de76e849b8974725615007b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3775854285920767479, guid: 1f3ec1b39de76e849b8974725615007b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3775854285920767479, guid: 1f3ec1b39de76e849b8974725615007b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3775854285920767479, guid: 1f3ec1b39de76e849b8974725615007b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3775854285920767479, guid: 1f3ec1b39de76e849b8974725615007b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9380296809308078, guid: 1f3ec1b39de76e849b8974725615007b, type: 3}
+      propertyPath: m_name
+      value: Chicken Coop
+      objectReference: {fileID: 0}
+    - target: {fileID: 9380296809308078, guid: 1f3ec1b39de76e849b8974725615007b, type: 3}
+      propertyPath: m_infoText
+      value: Don't count your choickens before they are all in the coop.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1f3ec1b39de76e849b8974725615007b, type: 3}
+--- !u!4 &6459043337957930497 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3775854285920767479, guid: 1f3ec1b39de76e849b8974725615007b,
+    type: 3}
+  m_PrefabInstance: {fileID: 7909911691895536630}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8614196449720443961
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6459043337957930497}
+    m_Modifications:
+    - target: {fileID: 100000, guid: fa0bb27952cec354ebe6d8daff99b4f5, type: 3}
+      propertyPath: m_Name
+      value: ChickenCoop
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fa0bb27952cec354ebe6d8daff99b4f5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fa0bb27952cec354ebe6d8daff99b4f5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fa0bb27952cec354ebe6d8daff99b4f5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fa0bb27952cec354ebe6d8daff99b4f5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fa0bb27952cec354ebe6d8daff99b4f5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fa0bb27952cec354ebe6d8daff99b4f5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fa0bb27952cec354ebe6d8daff99b4f5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fa0bb27952cec354ebe6d8daff99b4f5, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fa0bb27952cec354ebe6d8daff99b4f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fa0bb27952cec354ebe6d8daff99b4f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fa0bb27952cec354ebe6d8daff99b4f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fa0bb27952cec354ebe6d8daff99b4f5, type: 3}
+--- !u!1 &8614196449720476313 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: fa0bb27952cec354ebe6d8daff99b4f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 8614196449720443961}
+  m_PrefabAsset: {fileID: 0}

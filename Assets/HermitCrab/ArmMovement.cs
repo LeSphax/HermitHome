@@ -9,14 +9,16 @@ public class ArmMovement : MonoBehaviour
 
     public KeyCode upCode;
     public KeyCode downCode;
+    [SerializeField]
     private Rigidbody arm;
+    [SerializeField]
     private Rigidbody forearm;
     private GrabGround grabGround;
     // Start is called before the first frame update
     void Start()
     {
-        arm = fullArm.transform.Find("Arm").GetComponent<Rigidbody>();
-        forearm = fullArm.transform.Find("Forearm").GetComponent<Rigidbody>();
+        //arm = fullArm.transform.Find("Arm").GetComponent<Rigidbody>();
+        //forearm = fullArm.transform.Find("Forearm").GetComponent<Rigidbody>();
         grabGround = forearm.GetComponent<GrabGround>();
         grabGround.downCode = downCode;
         HingeJoint armJoint = gameObject.AddComponent<HingeJoint>();
@@ -38,13 +40,13 @@ public class ArmMovement : MonoBehaviour
     {
         if (Input.GetKey(upCode))
         {
-            arm.AddRelativeTorque(Vector3.back * speed, ForceMode.VelocityChange);
+            arm.AddRelativeTorque(transform.forward * speed, ForceMode.VelocityChange);
         }
         else if (Input.GetKey(downCode))
         {
             if (grabGround.tempHinge == null)
             {
-                arm.AddRelativeTorque(Vector3.forward * speed, ForceMode.VelocityChange);
+                arm.AddRelativeTorque(transform.forward * -speed, ForceMode.VelocityChange);
             }
         }
         else
