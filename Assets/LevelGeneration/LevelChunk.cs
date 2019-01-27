@@ -94,11 +94,14 @@ public class LevelChunk: MonoBehaviour {
         m_mesh.SetTriangles(triangles, 0, true);
         m_mesh.RecalculateNormals();
         m_mesh.RecalculateTangents();
-        m_mesh.UploadMeshData(true);
+        m_mesh.RecalculateBounds();
+        m_mesh.UploadMeshData(false);
 
         GetComponent<MeshFilter>().mesh = m_mesh;
-        if (GetComponent<MeshCollider>() != null)
-            GetComponent<MeshCollider>().sharedMesh = m_mesh;
+        var collider = GetComponent<MeshCollider>();
+        if (collider != null) {
+            collider.sharedMesh = m_mesh;
+        }
     }
     
     public void GenerateContent(LevelContentAsset levelContent) {
