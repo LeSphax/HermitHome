@@ -8,6 +8,7 @@ public class Collector: MonoBehaviour {
 
     void OnTriggerEnter(Collider other) {
         var collectible = other.GetComponentInParent<CollectibleInfo>();
+        Debug.Log(collectible?.name ?? "No collectible :(");
         if (collectible == null)
             return;
 
@@ -17,9 +18,9 @@ public class Collector: MonoBehaviour {
     void Collect(CollectibleInfo collectible) {
         var placementCollider = m_placementTarget.GetComponentInChildren<Collider>();
         var dir = Random.onUnitSphere;
-        if (dir.y < 0)
+        if (dir.y > 0)
             dir.y = -dir.y;
-        var ray = new Ray(placementCollider.transform.position - dir * 10.0f, dir);
+        var ray = new Ray(-dir * 10.0f, dir);
         RaycastHit hitinfo;
         if (!placementCollider.Raycast(ray, out hitinfo, 10.0f))
             return;
