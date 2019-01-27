@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CollectibleInfo : MonoBehaviour
 {
+    public string m_name = "";
     public string m_infoText = "";
 
     private void Start() {

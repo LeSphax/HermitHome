@@ -2,14 +2,14 @@
 
 public class IsGrounded : MonoBehaviour
 {
-
-    public static bool isGrounded = false;
+    public static int groundCount = 0;
+    public static bool isGrounded => groundCount > 0;
 
     public void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Ground")
         {
-            isGrounded = true;
+            groundCount++;
         }
     }
 
@@ -17,7 +17,7 @@ public class IsGrounded : MonoBehaviour
     {
         if (other.tag == "Ground")
         {
-            isGrounded = false;
+            groundCount--;
         }
     }
 }
