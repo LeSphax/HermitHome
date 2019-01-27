@@ -133,7 +133,7 @@ public class LevelGenerationManager: MonoBehaviour {
             levelChunk.GenerateContent(m_levelContent);
         if (playerPrefab != null) {
             var player = levelChunk.SpawnPlayer(playerPrefab);
-            m_target = player;
+            m_target = player.GetComponentInChildren<SimpleMovement>().gameObject;
         }
 
         levelChunk.Timestamp = Time.time;
