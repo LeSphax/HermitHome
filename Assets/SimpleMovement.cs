@@ -43,7 +43,7 @@ public class SimpleMovement : MonoBehaviour
             return;
 
         steeringInput *= m_steeringForce * Time.deltaTime;
-        Debug.Log(Vector3.up * steeringInput);
+        //Debug.Log(Vector3.up * steeringInput);
         GetComponent<Rigidbody>().AddRelativeTorque(Vector3.up * steeringInput, ForceMode.Force);
         // Input.GetAxis("Horizontal"):
     }
