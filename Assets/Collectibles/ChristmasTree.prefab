@@ -69,6 +69,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 29b503e44ef7fed4bbe1642138be20c9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 29b503e44ef7fed4bbe1642138be20c9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 29b503e44ef7fed4bbe1642138be20c9, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29b503e44ef7fed4bbe1642138be20c9, type: 3}
 --- !u!1 &2200270957749913357 stripped
@@ -88,11 +100,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ChristmasTree
-      objectReference: {fileID: 0}
-    - target: {fileID: 5550461226421094113, guid: 1f3ec1b39de76e849b8974725615007b,
-        type: 3}
-      propertyPath: m_Mass
-      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 3775854285920767479, guid: 1f3ec1b39de76e849b8974725615007b,
         type: 3}
@@ -156,6 +163,11 @@ PrefabInstance:
     - target: {fileID: 9380296809308078, guid: 1f3ec1b39de76e849b8974725615007b, type: 3}
       propertyPath: m_infoText
       value: Some want to celebrate all year round!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5550461226421094113, guid: 1f3ec1b39de76e849b8974725615007b,
+        type: 3}
+      propertyPath: m_Mass
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f3ec1b39de76e849b8974725615007b, type: 3}
