@@ -92,7 +92,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 2, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.053301282, y: -0.007679511, z: 0.00000011920929}
+  m_ConnectedAnchor: {x: 0.053301282, y: -0.007679511, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -164,7 +164,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &1276910081019873652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,7 +177,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9051bc51270bacd4a926e571b90a1a0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  downCode: 0
   tempHinge: {fileID: 0}
+  force: 0
+  forceVelocityRatio: 0
 --- !u!1 &1276910081326184090
 GameObject:
   m_ObjectHideFlags: 0
