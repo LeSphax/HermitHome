@@ -7,6 +7,7 @@ public class LevelGenerationManager: MonoBehaviour {
 
     private void Start() {
         Initialize();
+        GenerateChunk(Vector2Int.zero, m_playerPrefab);
         OnTargetChunkChanged();
         StartCoroutine(ChunkLoader());
     }
@@ -74,6 +75,9 @@ public class LevelGenerationManager: MonoBehaviour {
     }
 
     [SerializeField]
+    private GameObject m_playerPrefab = null;
+
+    [SerializeField]
     private GameObject m_target = null;
     private Vector2Int m_targetChunk = new Vector2Int();
     public Vector2Int TargetChunk {
@@ -110,7 +114,7 @@ public class LevelGenerationManager: MonoBehaviour {
         }
     }
 
-    private void GenerateChunk(Vector2Int chunk) {
+    private void GenerateChunk(Vector2Int chunk, GameObject playerPrefab = null) {
         if (Chunks.ContainsKey(chunk))
             Destroy(Chunks[chunk].gameObject);
 
@@ -127,6 +131,11 @@ public class LevelGenerationManager: MonoBehaviour {
         levelChunk.GenerateMesh();
         if (m_levelContent != null)
             levelChunk.GenerateContent(m_levelContent);
+        if (playerPrefab != null) {
+            var player = levelChunk.SpawnPlayer(playerPrefab);
+            m_target = player;
+        }
+
         levelChunk.Timestamp = Time.time;
         Chunks.Add(chunk, levelChunk);
     }

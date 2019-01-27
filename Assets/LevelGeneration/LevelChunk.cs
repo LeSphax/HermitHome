@@ -126,4 +126,18 @@ public class LevelChunk: MonoBehaviour {
                 
         }
     }
+
+    public GameObject SpawnPlayer(GameObject playerPrefab) {
+        if (playerPrefab == null)
+            return null;
+        var localPos = Vector2.one * m_size / 2;
+        var height = GenerateHeight(localPos) + 2.0f;
+
+        var player = Instantiate(
+            playerPrefab, 
+            transform.position + new Vector3(localPos.x, height, localPos.y), 
+            Quaternion.Euler(0, Random.Range(0f, 360f), 0));
+
+        return player;
+    }
 }
