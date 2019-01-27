@@ -25,6 +25,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piano
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 571f3cc6cf641c8498e3eae32bc2ee83, type: 3}
+      propertyPath: m_TagString
+      value: Collectible
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 571f3cc6cf641c8498e3eae32bc2ee83, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -89,11 +93,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piano
       objectReference: {fileID: 0}
-    - target: {fileID: 5550461226421094113, guid: 1f3ec1b39de76e849b8974725615007b,
-        type: 3}
-      propertyPath: m_Mass
-      value: 150
-      objectReference: {fileID: 0}
     - target: {fileID: 3775854285920767479, guid: 1f3ec1b39de76e849b8974725615007b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -157,6 +156,11 @@ PrefabInstance:
       propertyPath: m_infoText
       value: Acoustic, stringed musical instrument invented in Italy, in which the
         strings are struck by hammers
+      objectReference: {fileID: 0}
+    - target: {fileID: 5550461226421094113, guid: 1f3ec1b39de76e849b8974725615007b,
+        type: 3}
+      propertyPath: m_Mass
+      value: 150
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f3ec1b39de76e849b8974725615007b, type: 3}

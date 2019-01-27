@@ -127,6 +127,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Windmill
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 64c9d27b1262cee42a4075f777c77eac, type: 3}
+      propertyPath: m_TagString
+      value: Collectible
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 64c9d27b1262cee42a4075f777c77eac, type: 3}
+      propertyPath: m_TagString
+      value: Collectible
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 64c9d27b1262cee42a4075f777c77eac, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

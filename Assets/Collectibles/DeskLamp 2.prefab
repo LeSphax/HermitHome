@@ -12,11 +12,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DeskLamp 2
       objectReference: {fileID: 0}
-    - target: {fileID: 5550461226421094113, guid: 1f3ec1b39de76e849b8974725615007b,
-        type: 3}
-      propertyPath: m_Mass
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3775854285920767479, guid: 1f3ec1b39de76e849b8974725615007b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -80,6 +75,11 @@ PrefabInstance:
       propertyPath: m_infoText
       value: Not a princess but a very sexy lamp!
       objectReference: {fileID: 0}
+    - target: {fileID: 5550461226421094113, guid: 1f3ec1b39de76e849b8974725615007b,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f3ec1b39de76e849b8974725615007b, type: 3}
 --- !u!4 &6352190311201381532 stripped
@@ -98,6 +98,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 89560fd2cf3cd6a4990a71f2f70e4054, type: 3}
       propertyPath: m_Name
       value: table_lamp4
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 89560fd2cf3cd6a4990a71f2f70e4054, type: 3}
+      propertyPath: m_TagString
+      value: Collectible
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 89560fd2cf3cd6a4990a71f2f70e4054, type: 3}
       propertyPath: m_LocalPosition.x

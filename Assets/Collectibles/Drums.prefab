@@ -39,6 +39,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DrumKit_ride
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c246a90ec430d2e4a9c6bffa632aeda7, type: 3}
+      propertyPath: m_TagString
+      value: Collectible
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c246a90ec430d2e4a9c6bffa632aeda7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.772
@@ -113,6 +117,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 65170d3fe288d924d8cd5a2e4ee93648, type: 3}
       propertyPath: m_Name
       value: DrumKit_bass_drum
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 65170d3fe288d924d8cd5a2e4ee93648, type: 3}
+      propertyPath: m_TagString
+      value: Collectible
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 65170d3fe288d924d8cd5a2e4ee93648, type: 3}
       propertyPath: m_LocalPosition.x

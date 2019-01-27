@@ -25,6 +25,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: table_lamp2
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e720fa12e02ef1b49a8ecef9900395ad, type: 3}
+      propertyPath: m_TagString
+      value: Collectible
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e720fa12e02ef1b49a8ecef9900395ad, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

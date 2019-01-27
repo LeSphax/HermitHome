@@ -26,11 +26,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Snowman
       objectReference: {fileID: 0}
-    - target: {fileID: 5550461226421094113, guid: 1f3ec1b39de76e849b8974725615007b,
-        type: 3}
-      propertyPath: m_Mass
-      value: 70
-      objectReference: {fileID: 0}
     - target: {fileID: 3775854285920767479, guid: 1f3ec1b39de76e849b8974725615007b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -95,6 +90,11 @@ PrefabInstance:
       value: When you feel a little lonely you can always talk to this guy. And when
         you feel a little hungry, you can always eat his nose.
       objectReference: {fileID: 0}
+    - target: {fileID: 5550461226421094113, guid: 1f3ec1b39de76e849b8974725615007b,
+        type: 3}
+      propertyPath: m_Mass
+      value: 70
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f3ec1b39de76e849b8974725615007b, type: 3}
 --- !u!4 &2595267612709491472 stripped
@@ -113,6 +113,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4c2adb4827e699b4ba6bb9e85b33fe43, type: 3}
       propertyPath: m_Name
       value: Snowman
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4c2adb4827e699b4ba6bb9e85b33fe43, type: 3}
+      propertyPath: m_TagString
+      value: Collectible
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4c2adb4827e699b4ba6bb9e85b33fe43, type: 3}
       propertyPath: m_LocalPosition.x

@@ -25,6 +25,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cannon
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7a77efd3f5d6ea94eb494eabc98913e3, type: 3}
+      propertyPath: m_TagString
+      value: Collectible
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7a77efd3f5d6ea94eb494eabc98913e3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -89,11 +93,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canon
       objectReference: {fileID: 0}
-    - target: {fileID: 5550461226421094113, guid: 1f3ec1b39de76e849b8974725615007b,
-        type: 3}
-      propertyPath: m_Mass
-      value: 500
-      objectReference: {fileID: 0}
     - target: {fileID: 3775854285920767479, guid: 1f3ec1b39de76e849b8974725615007b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -156,6 +155,11 @@ PrefabInstance:
     - target: {fileID: 9380296809308078, guid: 1f3ec1b39de76e849b8974725615007b, type: 3}
       propertyPath: m_infoText
       value: Your home is your casle. this is the perfect accessory to defend it.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5550461226421094113, guid: 1f3ec1b39de76e849b8974725615007b,
+        type: 3}
+      propertyPath: m_Mass
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f3ec1b39de76e849b8974725615007b, type: 3}

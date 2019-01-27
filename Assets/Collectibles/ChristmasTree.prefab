@@ -25,6 +25,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChristmasTree
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 29b503e44ef7fed4bbe1642138be20c9, type: 3}
+      propertyPath: m_TagString
+      value: Collectible
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 29b503e44ef7fed4bbe1642138be20c9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
