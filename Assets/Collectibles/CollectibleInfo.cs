@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CollectableInfo : MonoBehaviour
+public class CollectibleInfo : MonoBehaviour
 {
     public string m_infoText = "";
 
