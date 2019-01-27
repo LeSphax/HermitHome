@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
-using System.Collections;
+using FMOD.Studio;
 
 public class Collector: MonoBehaviour {
 
     [SerializeField]
     private GameObject m_placementTarget = null;
+
 
     void OnTriggerEnter(Collider other) {
         var collectible = other.GetComponentInParent<CollectibleInfo>();
@@ -47,5 +48,6 @@ public class Collector: MonoBehaviour {
             Quaternion.Euler(0f, Random.Range(0f, 360f), 0f);
 
         TopScreenText.SetText(collectible.m_name + ": " + collectible.m_infoText);
+
     }
 }

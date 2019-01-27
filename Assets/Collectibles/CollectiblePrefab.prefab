@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5550461226421094113}
   m_Layer: 0
   m_Name: CollectiblePrefab
-  m_TagString: Untagged
+  m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80ca86124e68bd94b885ca6a71ff1a4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_name: 
   m_infoText: 
 --- !u!54 &5550461226421094113
 Rigidbody:

@@ -949,5 +949,35 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 5076359552129226020, guid: d5be03d88a299d741a9f47d35fb6e950,
+        type: 3}
+      propertyPath: Params.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076359552129226020, guid: d5be03d88a299d741a9f47d35fb6e950,
+        type: 3}
+      propertyPath: Params.Array.data[0].Value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076359552129226020, guid: d5be03d88a299d741a9f47d35fb6e950,
+        type: 3}
+      propertyPath: PlayEvent
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076359552129226020, guid: d5be03d88a299d741a9f47d35fb6e950,
+        type: 3}
+      propertyPath: Params.Array.data[1].Value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076359552129226020, guid: d5be03d88a299d741a9f47d35fb6e950,
+        type: 3}
+      propertyPath: Params.Array.data[2].Value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076359552129226020, guid: d5be03d88a299d741a9f47d35fb6e950,
+        type: 3}
+      propertyPath: Params.Array.data[3].Value
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5be03d88a299d741a9f47d35fb6e950, type: 3}
