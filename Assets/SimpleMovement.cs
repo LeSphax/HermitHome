@@ -12,7 +12,7 @@ public class SimpleMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetButtonDown("Cancel"))
             SceneManager.LoadScene("MenuScene", LoadSceneMode.Single);
 
         if (!IsGrounded.isGrounded)
