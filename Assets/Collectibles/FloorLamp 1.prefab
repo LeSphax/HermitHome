@@ -25,6 +25,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: standing_lamp1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5646953a9bb9c60468d36a2fc3dafcd6, type: 3}
+      propertyPath: m_TagString
+      value: Collectible
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5646953a9bb9c60468d36a2fc3dafcd6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

@@ -108,6 +108,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sink01
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4c05cf83a73dd4e428ca93be81211276, type: 3}
+      propertyPath: m_TagString
+      value: Collectible
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4c05cf83a73dd4e428ca93be81211276, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

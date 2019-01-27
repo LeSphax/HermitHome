@@ -13,15 +13,93 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 114682741373992810}
-  - {fileID: 114200920214164464}
+  - {fileID: 114044794354661074}
+  - {fileID: 114177815637848562}
   EditorEvents:
-  - {fileID: 114567338336975492}
-  - {fileID: 114690634454671842}
-  MasterBankRef: {fileID: 114200920214164464}
-  StringsBankRef: {fileID: 114682741373992810}
-  stringsBankWriteTime: 636841811580000000
+  - {fileID: 114035573897988462}
+  - {fileID: 114712577375718266}
+  - {fileID: 114025316176227948}
+  - {fileID: 114672207554183444}
+  - {fileID: 114374115370670682}
+  - {fileID: 114438889641090132}
+  - {fileID: 114325519294767186}
+  - {fileID: 114737340950232294}
+  - {fileID: 114497719291497770}
+  - {fileID: 114536307528736968}
+  - {fileID: 114281881024428058}
+  MasterBankRef: {fileID: 114177815637848562}
+  StringsBankRef: {fileID: 114044794354661074}
+  stringsBankWriteTime: 636841916080000000
   cacheVersion: 2
+--- !u!114 &114025316176227948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bump/Fist on Table
+  guid: 684615fee08c7347b04908ccfeb8a346
+  Banks:
+  - {fileID: 114177815637848562}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 899
+--- !u!114 &114035573897988462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Music
+  guid: 15c9e58379cc824488be937b7a157b87
+  Banks:
+  - {fileID: 114177815637848562}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114264254268006848}
+  - {fileID: 114782547669158314}
+  - {fileID: 114574765015800568}
+  - {fileID: 114180387961486908}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 130243
+--- !u!114 &114044794354661074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: Assets\Banks\Desktop\Master Bank.strings.bank
+  lastModified: 636841916080000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1450
+  Exists: 1
 --- !u!114 &114122517692168308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35,6 +113,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Game
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114177815637848562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\Sebas\Desktop\Workspace\UnityProjects\HermitHome\HermitHome\Assets\Banks\Desktop\Master
+    Bank.bank
+  lastModified: 636841916080000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 4516864
+  Exists: 1
+--- !u!114 &114180387961486908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Leg
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114194926928168960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Leg
   Min: 0
   Max: 1
   Default: 0
@@ -57,6 +187,46 @@ MonoBehaviour:
   - Name: Desktop
     Value: 3641088
   Exists: 1
+--- !u!114 &114264254268006848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Game
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114281881024428058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/Pull
+  guid: fc5e454f3d25a24b8a03ee74884cf0e3
+  Banks:
+  - {fileID: 114177815637848562}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114621208930475092}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7328
 --- !u!114 &114285098479780052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76,6 +246,29 @@ MonoBehaviour:
   - Name: Desktop
     Value: 848352
   Exists: 1
+--- !u!114 &114325519294767186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bump/Metal
+  guid: ae439a79e84e354d98faa8fe1fdd2ef0
+  Banks:
+  - {fileID: 114177815637848562}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 936
 --- !u!114 &114344284281012450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,6 +304,66 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114374115370670682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/Creak
+  guid: 81a74a71ee812a4581c52d58cccf29f4
+  Banks:
+  - {fileID: 114177815637848562}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114433475913324812}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4500
+--- !u!114 &114378090897917182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Game
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114389432998901096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\Sebas\Desktop\Workspace\UnityProjects\HermitHome\HermitHome\Assets\Banks\Desktop\Master
+    Bank.bank
+  lastModified: 636841818873304522
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 3641088
+  Exists: 1
 --- !u!114 &114400672081796934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,6 +380,109 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114433475913324812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Moving
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114438889641090132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Death
+  guid: 92460afafa1e35478c41c3c10ac8c89f
+  Banks:
+  - {fileID: 114177815637848562}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &114452207313900764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: PickUp
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114497719291497770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/Pick-up
+  guid: ddfd70a2543f004fb0f9c5473330268c
+  Banks:
+  - {fileID: 114177815637848562}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114452207313900764}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3664
+--- !u!114 &114536307528736968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/Legs
+  guid: e43c167982ca8f4f944b17457dc02d37
+  Banks:
+  - {fileID: 114177815637848562}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114194926928168960}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4500
 --- !u!114 &114547834765593224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,6 +523,38 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 130243
+--- !u!114 &114574765015800568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Moving
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114621208930475092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Moving
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114628591651198108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,6 +574,29 @@ MonoBehaviour:
   - Name: Desktop
     Value: 848352
   Exists: 0
+--- !u!114 &114672207554183444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bump/Wood Door
+  guid: 68f25c35bbf63745ba96cf3bffc22a2f
+  Banks:
+  - {fileID: 114177815637848562}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 654
 --- !u!114 &114682741373992810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,6 +639,52 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &114712577375718266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bump/Forest Log
+  guid: 17ebbca78d4ebc41872288788d992b49
+  Banks:
+  - {fileID: 114177815637848562}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 853
+--- !u!114 &114737340950232294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bump/Thump
+  guid: d7b7be70454a714a88489f3244b0868a
+  Banks:
+  - {fileID: 114177815637848562}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 744
 --- !u!114 &114751890347450532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,6 +705,22 @@ MonoBehaviour:
   - Name: Desktop
     Value: 3641088
   Exists: 1
+--- !u!114 &114782547669158314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: PickUp
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114811090601419308
 MonoBehaviour:
   m_ObjectHideFlags: 0
