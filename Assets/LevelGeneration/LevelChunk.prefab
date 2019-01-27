@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6283795178330398543}
   - component: {fileID: 1110549099784996747}
   - component: {fileID: 5018216098152673128}
+  - component: {fileID: 788738718567196441}
   m_Layer: 0
   m_Name: LevelChunk
   m_TagString: Untagged
@@ -93,7 +94,7 @@ MonoBehaviour:
   m_mesh: {fileID: 0}
   m_edgeCount: {x: 32, y: 32}
   m_size: 100
-  m_heightScalar: 1
+  m_heightScalar: 0.35
   m_chunkOffset: {x: 10000, y: 10000}
   m_octaves: 6
   m_frequency: 0.05
@@ -101,5 +102,19 @@ MonoBehaviour:
   m_persistance: 1.85
   m_scalarOctaves: 2
   m_scalarFrequency: 0.005
-  m_scalarLacunarity: 0.4
-  m_scalarPersistance: 1.5
+  m_scalarLacunarity: 0.25
+  m_scalarPersistance: 0.85
+--- !u!64 &788738718567196441
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5466115037570451406}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 0}

@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d85e34bdc9ad94ba2e7dc23f80a765, type: 3}
+  m_Name: CactusContent
+  m_EditorClassIdentifier: 
+  m_prefabs:
+  - weight: 1
+    content: {fileID: 8769560990477499079, guid: efb4269e8e3b71e4a89ef3725e4bba48,
+      type: 3}
+  - weight: 1
+    content: {fileID: 4669377192810715462, guid: fea5bb4f63bd5064ba5b4a2bcba93447,
+      type: 3}
+  - weight: 1
+    content: {fileID: 6914605178325080855, guid: 405ab5d6b10881c4ebbfdc8382636b35,
+      type: 3}
+  - weight: 1
+    content: {fileID: 7299360008695168797, guid: adb4613619b085f4a813c898c4646bf5,
+      type: 3}
+  - weight: 1
+    content: {fileID: 3503745351756615209, guid: 1698148903b704940b55097a8e342db2,
+      type: 3}
+  - weight: 1
+    content: {fileID: 8013571795681519405, guid: 9bc1d677ffb429344a2b326ef602463b,
+      type: 3}
+  - weight: 1
+    content: {fileID: 4857141222574328374, guid: 792710dd3a6ec2c4cb604296a7a59248,
+      type: 3}
+  - weight: 1
+    content: {fileID: 2282496330975848885, guid: fdb8899ffb82ae448af6b5b3009e8142,
+      type: 3}
+  - weight: 1
+    content: {fileID: 8086183201287068774, guid: 2f87f7c3924998841b3cb7fdacfcdcb9,
+      type: 3}
+  - weight: 1
+    content: {fileID: 2114937874133372376, guid: 313481b2e44ee9943a60ca19d2130c2a,
+      type: 3}
+  m_content: []
+  m_uprightStrength: 1
+  m_normalLip: 0

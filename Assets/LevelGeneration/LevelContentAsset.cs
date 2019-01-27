@@ -25,6 +25,9 @@ public class LevelContentAsset: ScriptableObject {
     [SerializeField]
     public WeightedContent[] m_content = null;
 
+    public float m_uprightStrength = 0.0f;
+    public float m_normalLip = 0.0f;
+
     public int Sum { get; private set; }
 
     public void Initialize() {
@@ -37,20 +40,23 @@ public class LevelContentAsset: ScriptableObject {
                 content.content.Initialize();
     }
 
-    public GameObject InstantiateObject(Transform parent, Vector3 worldPosition, Quaternion worldRotation) {
+    public virtual GameObject SpawnObject(Transform parent, Vector3 worldPosition, Vector3 worldNormal) {
         var selector = Random.Range(0, Sum);
         if (m_prefabs != null) {
             foreach (var weightedPrefab in m_prefabs) {
                 selector -= weightedPrefab.weight;
-                if (selector <= 0)
-                    return Instantiate(weightedPrefab.content, worldPosition, worldRotation, parent);
+                if (selector < 0) {
+                    var worldRotation = Quaternion.FromToRotation(Vector3.up, Vector3.up * m_uprightStrength + worldNormal)
+                        * Quaternion.Euler(0f, Random.Range(0f, 360f), 0f);
+                    return Instantiate(weightedPrefab.content, worldPosition - worldNormal * m_normalLip, worldRotation, parent);
+                }
             }
         }
         if (m_content != null) {
             foreach (var weightedContent in m_content) {
                 selector -= weightedContent.weight;
-                if (selector <= 0)
-                    return weightedContent.content.InstantiateObject(parent, worldPosition, worldRotation);
+                if (selector < 0)
+                    return weightedContent.content.SpawnObject(parent, worldPosition, worldNormal);
             }
         }
         return null;
