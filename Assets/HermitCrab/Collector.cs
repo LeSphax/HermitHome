@@ -14,16 +14,26 @@ public class Collector: MonoBehaviour {
 
         Collect(collectible);
     }
-
     void Collect(CollectibleInfo collectible) {
         var placementCollider = m_placementTarget.GetComponentInChildren<Collider>();
-        var dir = Random.onUnitSphere;
-        if (dir.y > 0)
-            dir.y = -dir.y;
-        var ray = new Ray(-dir * 10.0f, dir);
+        Vector3 dir = Vector3.zero;
+
+        while (dir.y < 0.5)
+        {
+            dir = Random.onUnitSphere;
+        }
+        
+
+        Vector3 direction = placementCollider.transform.position - placementCollider.transform.position + dir * 10f;
+        var ray2 = new Ray(placementCollider.transform.position + dir * 10f, -direction);
+
         RaycastHit hitinfo;
-        if (!placementCollider.Raycast(ray, out hitinfo, 10.0f))
+
+        if (!Physics.Raycast(ray2, out hitinfo, Mathf.Infinity, 1 << 9))
+        {
+            Debug.LogError("Don't knwo where to put the collectible");
             return;
+        }
 
         var rigidBody = collectible.GetComponent<Rigidbody>();
         if (rigidBody != null) {
@@ -35,5 +45,7 @@ public class Collector: MonoBehaviour {
         colTransf.position = hitinfo.point;
         colTransf.rotation = Quaternion.FromToRotation(Vector3.up, hitinfo.normal) *
             Quaternion.Euler(0f, Random.Range(0f, 360f), 0f);
+
+        TopScreenText.SetText(collectible.m_infoText);
     }
 }
